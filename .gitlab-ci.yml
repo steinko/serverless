@@ -1,0 +1,10 @@
+default:
+  image: openjdk:15
+stages:
+  - test
+
+unit-test:
+   stage: test
+   script:
+     - ./gradlew check
+
